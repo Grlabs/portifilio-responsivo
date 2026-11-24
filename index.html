@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guilherme Rodrigues</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><span></span><img src="images/logo.png" width="70" height="70"></a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+<button id="theme-toggle" class="theme-button" type="button">
+    ☀️Modo claro
+</button>
+
+        </nav>
+    </header>
+
+    <main>
+
+        
+<section id="inicio" class="inicio">
+
+    <div class="inicio-container">
+
+        <div class="inicio-conteudo">
+
+            <p class="destaque">PORTFÓLIO PESSOAL</p>
+
+            <h1>Olá, eu sou <span>Guilherme.</span></h1>
+
+            <h2>Estudante de Tecnologia e Engenharia</h2>
+
+            <p>
+                Interessado em programação, tecnologia,
+                desenvolvimento de software e automação.
+            </p>
+
+            <div class="botoes">
+                <a href="#projetos" class="botao">Ver projetos</a>
+                <a href="#contato" class="botao-secundario">Contato</a>
+            </div>
+
+        </div>
+
+        <div class="inicio-imagem">
+            <img src="images/foto.jpeg" alt="Foto de Guilherme">
+        </div>
+
+    </div>
+
+</section>
+
+
+        <section id="sobre" class="secao">
+            <h2>Sobre mim</h2>
+
+            <p>
+                Estudante de Ciência da Computação e Engenharia Mecatrônica, com interesse em tecnologia, desenvolvimento de software e resolução de problemas. Conhecimentos em programação, matemática aplicada e desenvolvimento web, com foco no aprendizado contínuo e na aplicação prática dos conhecimentos adquiridos durante a formação acadêmica.
+            </p>
+        </section>
+
+        
+<section id="formacao" class="secao">
+
+    <h2>Formação acadêmica</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Ciência da Computação</h3>
+            <p>UDF</p>
+            <span>2025/1</span>
+
+            <button class="botao-modal" onclick="abrirModal('udf')">
+                Ver mais
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Engenharia Mecatrônica</h3>
+            <p>Universidade de Brasília (UnB)</p>
+            <span>2025/2</span>
+
+            <button class="botao-modal" onclick="abrirModal('unb')">
+                Ver mais
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Modal da UDF -->
+<div id="modal-udf" class="modal">
+
+    <div class="modal-conteudo">
+
+        <button class="fechar-modal" onclick="fecharModal('udf')">
+            &times;
+        </button>
+
+        <h2>Ciência da Computação</h2>
+        <h3>UDF</h3>
+
+        <p>
+            Espaço para adicionar uma descrição sobre o curso,
+            sua experiência acadêmica e seus objetivos.
+        </p>
+
+        <img src="images/udf.png"  alt="Universidade UDF" class="imagem-modal">
+
+        <h3>Informações adicionais</h3>
+
+        <p>
+            No curso de Ciência da Computação do Centro Universitário do Distrito Federal (UDF), desenvolvi meus primeiros conhecimentos em desenvolvimento web, com HTML e CSS, além de experiências práticas de programação em C.
+             Também tive meu primeiro contato com bancos de dados, estudando seus fundamentos e aplicações. A graduação proporcionou ainda conhecimentos em Pensamento Computacional e na história da programação, ampliando minha compreensão sobre a evolução da computação e seus principais conceitos.
+        </p>
+
+        <div class="links-modal">
+            <a href="https://www.udf.edu.br/" target="_blank">
+                Site da universidade →
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Modal da UnB -->
+<div id="modal-unb" class="modal">
+
+    <div class="modal-conteudo">
+
+        <button class="fechar-modal" onclick="fecharModal('unb')">
+            &times;
+        </button>
+
+        <h2>Engenharia Mecatrônica</h2>
+        <h3>Universidade de Brasília</h3>
+
+        <p>
+            Estudante de Engenharia Mecatrônica na Universidade de Brasília (UnB), com ingresso em 2025/2. A graduação proporciona contato com conceitos de engenharia, programação e matemática aplicada.
+        </p>
+
+        <img src="images/unb.jpg"  width: 150px; height: 100px;  alt="Universidade de Brasília" class="imagem-modal">
+
+        <h3>Informações adicionais</h3>
+
+        <p>
+            Durante minha trajetória na Universidade de Brasília (UnB), no curso de Engenharia Mecatrônica, tive contato com diferentes áreas do conhecimento. Entre os conteúdos estudados estão Cálculo, Álgebra, Química e programação em Python, além de conhecimentos relacionados ao sistema operacional Linux. Essa experiência contribuiu para ampliar minha base em matemática, ciências e tecnologia, proporcionando contato com diferentes ferramentas e conceitos da engenharia.
+        </p>
+
+        <div class="links-modal">
+            <a href="https://www.unb.br/" target="_blank">
+                Site da universidade →
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+
+        <section id="habilidades" class="secao">
+            <h2>Habilidades</h2>
+
+            <div class="habilidades">
+                <span>C</span>
+                <span>Python</span>
+                <span>SQL</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+            </div>
+        </section>
+
+        <section id="projetos" class="secao">
+            <h2>Projetos</h2>
+
+            <div class="cards">
+
+                <div class="card projeto">
+                    <h3>Atividades em C</h3>
+                    <p>
+                        Exercícios de programação envolvendo
+                        vetores, matrizes, funções e estruturas
+                        de repetição.
+                    </p>
+
+                    <a href="https://github.com/Grlabs/estudos-em-c" target="_blank">
+                        Ver no GitHub →
+                    </a>
+                </div>
+
+                <div class="card projeto">
+                    <h3>Projetos pessoais</h3>
+                    <p>
+                        Espaço destinado a projetos e aplicações
+                        desenvolvidos durante meus estudos.
+                    </p>
+
+                    <a href="https://github.com/Grlabs" target="_blank">
+                        Ver no GitHub →
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contato" class="secao contato">
+            <h2>Contato</h2>
+
+            <p>Entre em contato ou acompanhe meus projetos.</p>
+
+            <div class="botoes">
+                <a href="https://github.com/Grlabs" target="_blank"
+                   class="botao">GitHub</a>
+
+                <a href="https://www.linkedin.com/in/guilhermerodrigues-gr/" target="_blank"
+                   class="botao-secundario">LinkedIn</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Guilherme Rodrigues. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
